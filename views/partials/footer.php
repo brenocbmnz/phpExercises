@@ -1,4 +1,4 @@
-<footer class="bg-gray-800 text-white mt-12 py-8">
+<footer class="bg-green-800 text-white mt-12 py-8">
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
@@ -15,7 +15,7 @@
       <div>
         <h3 class="text-lg font-bold mb-4">Contact Us</h3>
         <p class="text-gray-300">Phone: +1 (555) 123-4567</p>
-        <p class="text-gray-300">Email: info@bellacucina.com</p>
+        <p class="text-gray-300">Email: info@vivabrazil.com</p>
         <div class="flex mt-4 space-x-4">
           <a href="#" class="text-gray-300 hover:text-white">
             <span class="sr-only">Facebook</span>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+    <div class="mt-8 border-t border-green-700 pt-6 text-center text-sm text-gray-400">
       <p>&copy; <?= date('Y') ?> Viva Brazil. All rights reserved.</p>
     </div>
   </div>

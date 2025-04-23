@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
+<html lang="en" class="h-full bg-green-50">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
 <div class="min-h-full">
   <?php require 'views/partials/header.php'; ?>
 
-  <!-- Hero section -->
+  <!-- Hero section - reverting to gray/blue -->
   <div class="relative bg-gray-800 overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 bg-gray-800 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -21,19 +21,19 @@
               <div>
                 <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
                   <span class="block"><?= htmlspecialchars($restaurantInfo['name']) ?></span>
-                  <span class="block text-indigo-400"><?= htmlspecialchars($restaurantInfo['tagline']) ?></span>
+                  <span class="block text-green-400"><?= htmlspecialchars($restaurantInfo['tagline']) ?></span>
                 </h1>
                 <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   <?= htmlspecialchars($restaurantInfo['description']) ?>
                 </p>
                 <div class="mt-8 sm:mt-10">
                   <div class="rounded-md shadow">
-                    <a href="/phpExercises/menu.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10">
+                    <a href="/phpExercises/menu.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10">
                       View Our Menu
                     </a>
                   </div>
                   <div class="mt-3">
-                    <a href="/phpExercises/contact.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                    <a href="/phpExercises/contact.php" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
                       Make a Reservation
                     </a>
                   </div>
@@ -53,12 +53,12 @@
   <div class="py-12 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Our Specialties</h2>
+        <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">Our Specialties</h2>
         <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           Featured Menu Items
         </p>
         <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-          Experience the best of Italian cuisine with our chef's selections
+          Experience the best of Brazilian cuisine with our chef's selections
         </p>
       </div>
 
@@ -76,7 +76,7 @@
               <p class="mt-1 text-sm text-gray-500">
                 <?= htmlspecialchars($item['description']) ?>
               </p>
-              <p class="mt-2 text-lg font-medium text-indigo-600">
+              <p class="mt-2 text-lg font-medium text-green-600">
                 <?= htmlspecialchars($item['price']) ?>
               </p>
             </div>
@@ -91,7 +91,7 @@
   <div class="bg-gray-50 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
-        <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+        <h2 class="text-base text-green-600 font-semibold tracking-wide uppercase">Testimonials</h2>
         <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
           What Our Customers Say
         </p>

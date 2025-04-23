@@ -3,7 +3,10 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="shrink-0">
-            <img class="size-8" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500" alt="Bella Cucina">
+            <!-- Using external SVG file instead of inline SVG -->
+            <a href="/phpExercises/" class="flex items-center">
+              <img src="/phpExercises/assets/vivaicon.svg" alt="Viva Restaurant Logo" class="size-8 text-yellow-500">
+            </a>
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
@@ -24,8 +27,8 @@
               </svg>
             </button>
 
-            <!-- Reservation button - now opens modal -->
-            <button id="reservationButton" class="ml-4 inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <!-- Reservation button - keeping green as accent color -->
+            <button id="reservationButton" class="ml-4 inline-flex items-center rounded-md bg-green-600 px-3 py-2 text-sm font-medium text-white hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2">
               Make a Reservation
             </button>
           </div>
@@ -55,8 +58,8 @@
         <a href="/phpExercises/" class="<?= $currentPage === 'home' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> block rounded-md px-3 py-2 text-base font-medium">Home</a>
         <a href="/phpExercises/menu.php" class="<?= $currentPage === 'menu' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> block rounded-md px-3 py-2 text-base font-medium">Menu</a>
         <a href="/phpExercises/contact.php" class="<?= $currentPage === 'contact' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> block rounded-md px-3 py-2 text-base font-medium">Contact</a>
-        <!-- Mobile reservation button -->
-        <button id="mobileReservationButton" class="w-full text-left block rounded-md px-3 py-2 text-base font-medium bg-indigo-600 text-white">Make a Reservation</button>
+        <!-- Mobile reservation button - keeping green as accent color -->
+        <button id="mobileReservationButton" class="w-full text-left block rounded-md px-3 py-2 text-base font-medium bg-green-600 text-white">Make a Reservation</button>
       </div>
     </div>
   </nav>
