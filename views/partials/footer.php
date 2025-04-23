@@ -1,4 +1,4 @@
-<footer class="bg-green-800 text-white mt-12 py-8">
+<footer class="bg-gray-800 text-white mt-12 py-8">
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div>
@@ -32,7 +32,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-8 border-t border-green-700 pt-6 text-center text-sm text-gray-400">
+    <div class="mt-8 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
       <p>&copy; <?= date('Y') ?> Viva Brazil. All rights reserved.</p>
     </div>
   </div>
