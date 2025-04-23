@@ -24,10 +24,10 @@
               </svg>
             </button>
 
-            <!-- Reservation button -->
-            <a href="/phpExercises/contact.php" class="ml-4 inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <!-- Reservation button - now opens modal -->
+            <button id="reservationButton" class="ml-4 inline-flex items-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-medium text-white hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
               Make a Reservation
-            </a>
+            </button>
           </div>
         </div>
         <div class="-mr-2 flex md:hidden">
@@ -55,6 +55,8 @@
         <a href="/phpExercises/" class="<?= $currentPage === 'home' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> block rounded-md px-3 py-2 text-base font-medium">Home</a>
         <a href="/phpExercises/menu.php" class="<?= $currentPage === 'menu' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> block rounded-md px-3 py-2 text-base font-medium">Menu</a>
         <a href="/phpExercises/contact.php" class="<?= $currentPage === 'contact' ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?> block rounded-md px-3 py-2 text-base font-medium">Contact</a>
+        <!-- Mobile reservation button -->
+        <button id="mobileReservationButton" class="w-full text-left block rounded-md px-3 py-2 text-base font-medium bg-indigo-600 text-white">Make a Reservation</button>
       </div>
     </div>
   </nav>

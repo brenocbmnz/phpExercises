@@ -159,6 +159,7 @@
   </div>
 
   <?php require 'views/partials/footer.php'; ?>
+  <?php require 'views/partials/reservation-modal.php'; ?>
 </div>
 
 </body>

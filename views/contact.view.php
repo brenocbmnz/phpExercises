@@ -53,86 +53,59 @@
               </dl>
             </div>
           </div>
+        </div>
 
-          <!-- Map Placeholder -->
-          <div class="mt-8 bg-gray-200 rounded-lg h-64 flex items-center justify-center">
+        <!-- Map and direct contact options -->
+        <div class="mt-12 lg:mt-0">
+          <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center mb-6">
             <p class="text-gray-700">Map would be embedded here</p>
             <!-- In a real implementation, you would embed a Google Maps iframe or similar here -->
           </div>
-        </div>
-
-        <!-- Contact/Reservation Form -->
-        <div class="mt-12 lg:mt-0">
-          <h2 class="text-2xl font-bold text-gray-900 mb-6">Make a Reservation</h2>
           
-          <form action="#" method="POST" class="space-y-6">
-            <div>
-              <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-              <input type="text" name="name" id="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Your name">
+          <div class="bg-white shadow rounded-lg p-6">
+            <h3 class="text-lg font-medium text-gray-900 mb-4">Get in Touch</h3>
+            <p class="text-gray-600 mb-4">
+              Have questions or feedback? Reach out to us directly:
+            </p>
+            <div class="flex items-center mb-4">
+              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+              </svg>
+              <span><?= htmlspecialchars($contactInfo['phone']) ?></span>
             </div>
-
-            <div>
-              <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-              <input type="email" name="email" id="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="your@email.com">
+            <div class="flex items-center">
+              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+              <span><?= htmlspecialchars($contactInfo['email']) ?></span>
             </div>
-            
-            <div>
-              <label for="phone" class="block text-sm font-medium text-gray-700">Phone</label>
-              <input type="tel" name="phone" id="phone" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Your phone number">
-            </div>
-
-            <div class="grid grid-cols-2 gap-6">
-              <div>
-                <label for="date" class="block text-sm font-medium text-gray-700">Date</label>
-                <input type="date" name="date" id="date" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-              </div>
-              
-              <div>
-                <label for="time" class="block text-sm font-medium text-gray-700">Time</label>
-                <select id="time" name="time" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                  <option value="">Select a time</option>
-                  <option value="18:00">6:00 PM</option>
-                  <option value="18:30">6:30 PM</option>
-                  <option value="19:00">7:00 PM</option>
-                  <option value="19:30">7:30 PM</option>
-                  <option value="20:00">8:00 PM</option>
-                  <option value="20:30">8:30 PM</option>
-                  <option value="21:00">9:00 PM</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="guests" class="block text-sm font-medium text-gray-700">Number of Guests</label>
-              <select id="guests" name="guests" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500">
-                <option value="1">1 person</option>
-                <option value="2">2 people</option>
-                <option value="3">3 people</option>
-                <option value="4">4 people</option>
-                <option value="5">5 people</option>
-                <option value="6">6 people</option>
-                <option value="7+">7+ people</option>
-              </select>
-            </div>
-            
-            <div>
-              <label for="message" class="block text-sm font-medium text-gray-700">Special Requests</label>
-              <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Any special requests or dietary requirements?"></textarea>
-            </div>
-            
-            <div>
-              <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Request Reservation
+            <div class="mt-6">
+              <button type="button" id="contactReservationButton" class="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Make a Reservation
               </button>
             </div>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
   <?php require 'views/partials/footer.php'; ?>
+  <?php require 'views/partials/reservation-modal.php'; ?>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const contactReservationBtn = document.getElementById('contactReservationButton');
+    if (contactReservationBtn) {
+      contactReservationBtn.addEventListener('click', function() {
+        const modal = document.getElementById('reservationModal');
+        modal.classList.remove('hidden');
+      });
+    }
+  });
+</script>
 
 </body>
 </html>
