@@ -19,9 +19,8 @@
   
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <!-- Menu sections -->
       <div class="space-y-16">
-        <!-- Appetizers -->
+
         <section>
           <h2 class="text-2xl font-bold text-green-600 mb-6">Appetizers</h2>
           <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -37,7 +36,7 @@
           </div>
         </section>
 
-        <!-- Main Courses -->
+
         <section>
           <h2 class="text-2xl font-bold text-green-600 mb-6">Main Courses</h2>
           <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -53,7 +52,7 @@
           </div>
         </section>
         
-        <!-- Desserts -->
+
         <section>
           <h2 class="text-2xl font-bold text-green-600 mb-6">Desserts</h2>
           <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -69,7 +68,7 @@
           </div>
         </section>
 
-        <!-- Drinks -->
+
         <section>
           <h2 class="text-2xl font-bold text-green-600 mb-6">Drinks</h2>
           <div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -86,7 +85,6 @@
         </section>
       </div>
 
-      <!-- Menu Special Note -->
       <div class="mt-16 bg-green-50 rounded-md p-6">
         <h3 class="text-lg font-medium text-green-800">Chef's Note</h3>
         <p class="mt-2 text-green-700">

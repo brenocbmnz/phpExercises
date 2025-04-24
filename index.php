@@ -1,6 +1,5 @@
 <?php
 
-// Restaurant information
 $restaurantInfo = [
     'name' => 'Viva',
     'tagline' => 'Authentic Brazilian Cuisine',

@@ -20,7 +20,6 @@
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-        <!-- Contact Information -->
         <div>
           <h2 class="text-2xl font-bold text-gray-900 mb-6">Restaurant Information</h2>
           
@@ -55,11 +54,10 @@
           </div>
         </div>
 
-        <!-- Map and direct contact options -->
         <div class="mt-12 lg:mt-0">
           <div class="bg-gray-200 rounded-lg h-64 flex items-center justify-center mb-6">
             <p class="text-gray-700">Map would be embedded here</p>
-            <!-- In a real implementation, you would embed a Google Maps iframe or similar here -->
+  
           </div>
           
           <div class="bg-white shadow rounded-lg p-6">
